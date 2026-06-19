@@ -25,7 +25,6 @@ class Testimony:
         self.evidence   = evidence
         self.dep_edges  = dep_edges or []
 
-        # Build lookup dict for convenience
         self._nodes = {n.node_id: n for n in statements + evidence}
 
     def get_node(self, node_id):

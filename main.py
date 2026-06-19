@@ -3,17 +3,17 @@ from graph import build_testimony_graph, print_report
 from visualization import visualize_graph
 
 def main():
-    # Load case data
+    # case data
     testimony = load_turnabout_sisters()
     # testimony = build_custom_case()
 
-    # Build the testimony graph
+    # testimony graph
     G, contradictions = build_testimony_graph(testimony)
 
-    # Print the contradiction report
+    # contradiction report
     print_report(testimony, G)
 
-    # Print graph summary
+    #  graph summary
     print(f"\n  Graph summary:")
     print(f"    Vertices : {G.number_of_nodes()}")
     print(f"    Edges    : {G.number_of_edges()}")
@@ -26,7 +26,7 @@ def main():
     for t, count in edge_types.items():
         print(f"      {t}: {count}")
 
-    # Visualize
+    # visualize
     visualize_graph(
         G,
         title=f"Testimony Graph G_T — {testimony.name}",
