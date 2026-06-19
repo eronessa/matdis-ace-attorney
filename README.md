@@ -17,7 +17,8 @@ this tool automatically flags inconsistencies by mapping statements and evidence
 * **`main.py`**: The main execution script that ties everything together.
 * **`test_logic.py`**: A suite of unit tests for the logical operations.
 * **`requirements.txt`**: A list of the required Python packages to run the project.
-'''pip install -r requirements.txt'''
+```bash
+pip install -r requirements.txt
 to install the requirements
 
 ---
@@ -28,4 +29,6 @@ to install the requirements
 2. **(Optional but recommended)** Create a virtual environment:
    ```bash
    python -m venv venv
+   
+   ```bash
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
